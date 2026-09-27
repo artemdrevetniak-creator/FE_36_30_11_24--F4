@@ -1,0 +1,79 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+	color: #111;
+}
+
+button {
+	font: inherit;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.container {
+	width: min(100% - 40px, 1000px);
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+#products {
+	display: grid;
+	gap: 16px;
+	margin-bottom: 5rem;
+}
+
+.product-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 24px;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.product-card__name {
+	margin-bottom: 8px;
+	font-size: 20px;
+}
+
+.product-card__material,
+.product-card__description {
+	margin: 4px 0;
+	color: #666;
+}
+
+/* pagination */
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+}
+.pagination button {
+	padding: 5px 10px;
+	background-color: #ededed;
+	transition:
+		background-color 0.3s ease-out,
+		color 0.3s ease-out;
+}
+.pagination button:hover {
+	background-color: #111;
+	color: #ededed;
+}
+.pagination button.active {
+	background-color: #111;
+	color: #ededed;
+	pointer-events: none;
+}
+.pagination #pages {
+	display: flex;
+	gap: 0.5rem;
+}

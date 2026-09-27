@@ -49,7 +49,7 @@ git clone https://github.com/artemdrevetniak-creator/FE_36_30_11_24--F4.git
 Перейти до папки проєкту:
 
 ```bash
-cd web-development-course
+cd FE_36_30_11_24--F4
 ```
 
 ### 2. Вибрати потрібне заняття
